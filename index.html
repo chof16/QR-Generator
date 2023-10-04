@@ -28,7 +28,7 @@
             const input = document.querySelector("#url")
             if (input.value != "") {
                 sessionStorage.setItem("url",input.value)
-                location.replace("/qrpage.html")
+                location.replace(window.location.origin+"/qrpage.html")
             }
         }
 

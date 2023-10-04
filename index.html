@@ -27,8 +27,7 @@
             const input = document.querySelector("#url")
             if (input.value != "") {
                 sessionStorage.setItem("url",input.value)
-                console.log(window.location.origin+"/qrpage.html")
-                location.replace("https://chof16.github.io/QR-Generator/qrpage.html")
+                window.location.replace("QR-Generator/qrpage.html");
                 e.preventDefault()
             }
         }

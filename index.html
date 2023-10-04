@@ -24,11 +24,12 @@
         button.addEventListener("click", handleUrl)
 
         function handleUrl(e) {
-            e.preventDefault()
             const input = document.querySelector("#url")
             if (input.value != "") {
                 sessionStorage.setItem("url",input.value)
-                location.replace(window.location.origin+"/qrpage.html")
+                console.log(window.location.origin+"/qrpage.html")
+                location.replace("https://chof16.github.io/QR-Generator/qrpage.html")
+                e.preventDefault()
             }
         }
 
